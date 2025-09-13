@@ -24,11 +24,11 @@ def get_current_weather():
         weather_data = response.json()
         # pprint(weather_data)  # full json
 
-        print(f"\nCurrent weather for {weather_data["name"]}:")
+        print(f"\nCurrent weather for {weather_data["name"]}:::")
         print(f"\nThe Temp is {weather_data["main"]["temp"]:.1f}")
 
     except Exception as err:
-        print(f"An unexpected error occurred: {err}")
+        print(f"An unexpected error occurred::: {err}")
 
 get_current_weather()
 
